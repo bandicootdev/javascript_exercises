@@ -34,3 +34,20 @@ const factorial = (num) => {
 }
 
 console.log(factorial(5))
+
+// 12) Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true.
+
+const primeNumber = (num) => {
+    let i = 2;
+    let prime = true;
+    do {
+        if ((num % i) === 0) {
+            prime = false;
+        }
+        i++;
+    } while (i < num)
+    return prime
+
+}
+
+console.log(primeNumber(3))

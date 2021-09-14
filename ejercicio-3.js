@@ -20,3 +20,17 @@ const numCapicua = (num) => {
 }
 
 console.log(numCapicua(2002))
+
+// 11) Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n)
+
+const factorial = (num) => {
+    let con = 1;
+    let acc = 5;
+    while (con < num) {
+        acc = acc * con;
+        con++
+    }
+    return `Factorial for ${num} is ${acc}`
+}
+
+console.log(factorial(5))
